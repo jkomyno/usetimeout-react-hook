@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 10.15.0
+  - stable
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - npm test
+  - npm run build
+
+after_script:
+  # no need to install coveralls, since it's already installed on Travis CI
+  cat ./coverage/lcov.info | coveralls
