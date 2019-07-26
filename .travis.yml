@@ -14,5 +14,4 @@ script:
   - npm run build
 
 after_script:
-  # no need to install coveralls, since it's already installed on Travis CI
-  cat ./coverage/lcov.info | coveralls
+  cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
