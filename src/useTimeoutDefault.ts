@@ -1,7 +1,7 @@
 import { useTimeout, CancelTimer } from './useTimeout';
 import { defaultTimeoutHandler } from './defaultTimeoutHandler';
 
-export type UseTimeoutDefault = (callback: () => void, timeout: number, deps: unknown[]) => CancelTimer;
+export type UseTimeoutDefault = (callback: () => void, timeout: number, deps?: unknown[]) => CancelTimer;
 
 /**
  * useTimeoutDefault is a React.js custom hook that sets a leak-safe timeout and returns

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { TimeoutHandler } from './TimeoutHandler';
 
 export type CancelTimer = () => void;
-export type UseTimeout = <T>(callback: () => void, timeout: number, timeHandler: TimeoutHandler<T>, deps: unknown[]) => CancelTimer;
+export type UseTimeout = <T>(callback: () => void, timeout: number, timeHandler: TimeoutHandler<T>, deps?: unknown[]) => CancelTimer;
 
 /**
  * useTimeout is a React.js custom hook that sets a leak-safe timeout and returns

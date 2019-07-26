@@ -83,7 +83,7 @@ import useTimeoutDefault from 'usetimeout'; // notice that it's a default import
  * @param deps useEffect dependencies that should cause the timeout to be reset
  * @return function to cancel the timer before the timeout expires
  */
-type UseTimeoutDefault = (callback: () => void, timeout: number, deps: unknown[]) => CancelTimer;
+type UseTimeoutDefault = (callback: () => void, timeout: number, deps?: unknown[]) => CancelTimer;
 ```
 
 Since `usetimeout` supports a generic timer, it requires an implementation of the TimeoutHandler interface, which is defined as:
@@ -126,7 +126,7 @@ import { useTimeout } from 'usetimeout'; // notice that it's a named import
  * @param deps useEffect dependencies that should cause the timeout to be reset
  * @return function to cancel the timer before the timeout expires
  */
-type UseTimeout = <T>(callback: () => void, timeout: number, timeHandler: TimeoutHandler<T>, deps: unknown[]) => CancelTimer;
+type UseTimeout = <T>(callback: () => void, timeout: number, timeHandler: TimeoutHandler<T>, deps?: unknown[]) => CancelTimer;
 ```
 
 ---------------------------------------------------------
