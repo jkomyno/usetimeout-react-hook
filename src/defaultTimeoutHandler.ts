@@ -6,5 +6,5 @@ import { TimeoutHandler } from './TimeoutHandler';
  */
 export const defaultTimeoutHandler: TimeoutHandler<number> = {
   setTimeout: (fn: () => void, timeout: number) => window.setTimeout(fn, timeout),
-  clearTimeout: (timeoutFn: number | undefined) => { window.clearTimeout(timeoutFn) },
+  clearTimeout: (timeout: number | undefined) => { window.clearTimeout(timeout) },
 };
