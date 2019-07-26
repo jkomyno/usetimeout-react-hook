@@ -1,6 +1,6 @@
 {
   "name": "usetimeout-react-hook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React.js custom hook that sets a leak-safe timeout and returns a function to cancel it before the timeout expires.",
   "main": "build/index.js",
   "module": "build/index.es.js",
