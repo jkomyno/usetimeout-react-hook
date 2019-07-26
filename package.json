@@ -7,7 +7,8 @@
   "jsnext:main": "build/index.es.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
