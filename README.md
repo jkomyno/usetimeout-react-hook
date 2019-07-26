@@ -6,7 +6,7 @@
   <a href="https://coveralls.io/github/jkomyno/usetimeout-react-hook?branch=master">
     <img alt="Coverage Status" src="https://coveralls.io/repos/jkomyno/usetimeout-react-hook/badge.svg?branch=master" target="_blank" />
   </a>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/jkomyno/usetimeout-react-hook#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
   </a>
