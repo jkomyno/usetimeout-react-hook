@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import { TimeoutHandler } from './TimeoutHandler';
 
 export type CancelTimer = () => void;
@@ -51,9 +51,9 @@ export const useTimeout: UseTimeout = (callback, timeout, timeHandler, deps = []
    * It does so using `timeHandler.clearTimeout` without exposing the last
    * reference to the timer to the user.
    */
-  function cancelTimer() {
+  const cancelTimer = useCallback(() => {
     return timeHandler.clearTimeout(refTimer.current);
-  }
+  }, [timeHandler])
 
   return cancelTimer;
 }
